@@ -1,1 +1,11 @@
 git clone https://github.com/ubaimutl/react-portfolio.git
+cd react-portfolio
+npm install
+npm start
+"homepage": "https://your-github-username.github.io/react-portfolio",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+npm install gh-pages --save-dev
+npm run deploy
